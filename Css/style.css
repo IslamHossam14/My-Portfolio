@@ -49,7 +49,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5)100% , rgba(0, 0, 0, 0)100%), url(images/design\ 1.webp);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5)100% , rgba(0, 0, 0, 0)100%), url(../images/design\ 1.webp);
     /* background: url(images/BG.webp) no-repeat ;*/
     background-size: cover;
     background-position: center;
