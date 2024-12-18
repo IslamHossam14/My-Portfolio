@@ -10,7 +10,8 @@
 
 
 header {
-    background-color: #344adb;
+    /* background-color: #344adb; */
+    background-color: #000;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -49,14 +50,53 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5)100% , rgba(0, 0, 0, 0)100%), url(../images/design\ 1.webp);
-    /* background: url(images/BG.webp) no-repeat ;*/
-    background-size: cover;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5)100% , rgba(0, 0, 0, 0)100%), url(../images/design\ 1.webp) no-repeat;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+    background-color: #1A1A1A;
     
-    
-    
+    /*  */
+
+    /* .main {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom , #1A1A1A ,#000);
+        color: #fff; 
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    header {
+        padding: 20px;
+    } */
+
+    h1 {
+        font-size: 38px;
+        color: #7F5AF0;
+        margin-bottom: 26px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: #fff;
+    } 
+
+    .greeting {
+        color: #fff; 
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    /*  */
 }
 
 .main h2 {
@@ -84,7 +124,7 @@ section {
 
 .main-btn {
     color: #f4f4f4;
-    background-color: #3a6cf4;
+    background-color: #7F5AF0;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -110,7 +150,7 @@ section {
 .title {
     display: flex;
     justify-content: center;
-    color: #3a6cf4;
+    color: #7F5AF0;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
@@ -138,7 +178,7 @@ section {
 }
 
 .card .icon {
-    color: #3a6cf4;
+    color: #7F5AF0;
     font-size: 8em;
     text-align: center;
 }
@@ -149,7 +189,7 @@ section {
 }
 
 .info h3 {
-    color: #3a6cf4;
+    color: #7F5AF0;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
@@ -198,10 +238,6 @@ section {
     font-weight: 800;
     margin-top: 10px;
 }
-
-
-
-
 
 .projects {
     background-color: #000016;
@@ -259,7 +295,9 @@ section {
 .more-details:hover {
     color: #601cfc;
 }
+/*  */
 
+/*  */
 .contact .icon {
     font-size: 4.5em;
 }
@@ -269,9 +307,135 @@ section {
 }
 
 .contact .info p {
+    font-size: 1.3em;
+}
+
+
+/*  */
+
+  .form-container {
+    background: #fff;
+    /* padding: 20px 30px; */
+    padding: 80px 350px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.1);
+    /* width: 50%; */
+    /* max-width: 400px; */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+   
+  }
+  
+  .form-container h2 {
+    margin: 0;
+    color: #7F5AF0;
+    font-size: 1.5em;
+  }
+  
+  .form-container p {
+    margin: 10px 0 20px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+  }
+  
+  .form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline: none;
+    border-color: #7F5AF0;
+  }
+  
+  .form .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+  
+  .form .checkbox-container input {
+    margin-right: 10px;
+  }
+  
+  form button {
+    background: #7F5AF0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    margin-top: 10px;
+    /* margin-bottom : 10px; */
+  }
+  
+  form button:hover {
+    background: #0a49f6;
+  }
+  .required {
+    color: red;
+  }
+  
+/*  */
+/* .content.container{
+    display: flex;
+    box-sizing: inherit;
+    margin-right: 20px;
+
+
+}
+.content-container h2 {
+    margin: 0;
+    color: #7F5AF0;
     font-size: 1.5em;
 }
 
+.card-container {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    flex-direction: column;
+}
+.card-container.icon{ 
+    color: #7F5AF0;
+    font-size: 8em;
+    text-align: center;
+
+} */
+
+/*  */
 .footer {
     background-color: #000016;
     color: #fff;
@@ -295,6 +459,11 @@ section {
 }
 
 @media (max-width:1023px) {
+    .form-container{
+        padding: 80px 30px;
+   
+    }
+    
     header {
         padding: 12px 20px;
     }
@@ -338,6 +507,7 @@ section {
     .main-content h3 {
         font-size: 1.4em;
     }
+
 }
 
 @media (max-width:300px) {
@@ -346,3 +516,5 @@ section {
 
     }
 }
+
+
